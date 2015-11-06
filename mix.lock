@@ -1,0 +1,4 @@
+%{"goldrush": {:hex, :goldrush, "0.1.7"},
+  "jsx": {:hex, :jsx, "1.4.5"},
+  "jsxd": {:hex, :jsxd, "0.1.10"},
+  "lager": {:hex, :lager, "2.1.1"}}
