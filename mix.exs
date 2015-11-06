@@ -1,4 +1,4 @@
-defmodule EnsqTest.Mixfile do
+defmodule Ensq.Mixfile do
   use Mix.Project
 
   def project do
@@ -8,10 +8,6 @@ defmodule EnsqTest.Mixfile do
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps]
-  end
-
-  def application do
-    [applications: []]
   end
 
   defp deps do
