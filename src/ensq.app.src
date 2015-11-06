@@ -8,7 +8,7 @@
                     {discover_interval,60000},
                     {discover_jitter,10},
                     {max_retry_delay,10000},
-                    {retry_inital,1000},
+                    {retry_initial,1000},
                     {retry_inc_type,linear}]},
               {contributors,["Heinz N. Gies"]},
               {licenses,["CDDL"]},

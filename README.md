@@ -71,8 +71,8 @@ By default channels are registered processes that way it's possible to do things
 ### Configuration
 
 - `max_in_flight` maximum number of messages the server can handle at once (`300`).
-- `discovery_inteval` Delay between discovery requests in milliseconds (`60000`).
+- `discover_interval` Delay between discovery requests in milliseconds (`60000`).
 - `discover_jitter` Jitter in percent added or subtracted of the discovery interval, a value of `10` gives a total jitter of `20%` by adding between `-10%` and `+10%` (`10`).
 - `max_retry_delay` The maximum delay for retries in milliseconds (`10000`).
-- `retry_inital` Initial retry value in milliseconds (`1000`).
-- `retry_inc_type` The algorithm the retry interval progresses, it can either be `linear` making the retry delay `Attempt*retry_inital` milliseconds or `quadratic` making the retry delay `Attempt*Attempt*retry_inital`
+- `retry_initial` Initial retry value in milliseconds (`1000`).
+- `retry_inc_type` The algorithm the retry interval progresses, it can either be `linear` making the retry delay `Attempt*retry_initial` milliseconds or `quadratic` making the retry delay `Attempt*Attempt*retry_initial`

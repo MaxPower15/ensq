@@ -17,7 +17,7 @@
   {datatype, integer}]}.
 
 %% @doc Interval in which discovery servers are polled.
-{mapping, "nsq.retry_inital", "ensq.retry_inital",
+{mapping, "nsq.retry_initial", "ensq.retry_initial",
  [{default, "1s"},
   {datatype, {duration, ms}}]}.
 

@@ -157,7 +157,7 @@ build_opts(Opts) ->
     {ok, Interval} = application:get_env(discover_interval),
     {ok, Jitter} = application:get_env(discover_jitter),
     {ok, MaxDelay} = application:get_env(max_retry_delay),
-    {ok, RetInitial} = application:get_env(retry_inital),
+    {ok, RetInitial} = application:get_env(retry_initial),
     {ok, RetType} = application:get_env(retry_inc_type),
     RetryRule = {MaxDelay, RetInitial, RetType},
     State = #state{discover_interval = Interval, jitter = Jitter,
