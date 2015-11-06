@@ -58,7 +58,7 @@ start() ->
 -spec init(spec()) -> ok.
 
 init({DiscoveryServers, Topics}) ->
-    [topic_from_sepc(DiscoveryServers, Topic) || Topic <- Topics],
+    [topic_from_sepc(DiscoveryServers, {Topic, []}) || Topic <- Topics],
     ok.
 
 
