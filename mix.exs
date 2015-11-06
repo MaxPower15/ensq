@@ -10,6 +10,10 @@ defmodule Ensq.Mixfile do
      deps: deps]
   end
 
+  def application do
+    [applications: [:jsxd, :jsx, :lager]]
+  end
+
   defp deps do
     [
       {:lager, "~> 2.1.1"},
