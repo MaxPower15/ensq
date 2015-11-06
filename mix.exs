@@ -11,7 +11,7 @@ defmodule EnsqTest.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :ensq]]
+    [applications: []]
   end
 
   defp deps do
