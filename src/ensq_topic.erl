@@ -382,6 +382,8 @@ build_ref2srv([], Acc) ->
 build_ref2srv([{_Srv, []} | R], Acc) ->
     build_ref2srv(R, Acc);
 build_ref2srv([{Srv, [{_, _, _, Ref} | RR]} | R], Acc) ->
+    build_ref2srv([{Srv, RR} | R], [{Ref, Srv} | Acc]);
+build_ref2srv([{Srv, [{_, _, _, _, Ref} | RR]} | R], Acc) ->
     build_ref2srv([{Srv, RR} | R], [{Ref, Srv} | Acc]).
 
 
