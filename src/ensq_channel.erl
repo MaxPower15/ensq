@@ -166,8 +166,8 @@ data(<<Size:32/integer, Raw:Size/binary, Rest/binary>>, RC,
     {Reply, CStateNew} =
         case Raw of
             <<?FRAME_TYPE_MESSAGE:32/integer, _Timestamp:64/integer,
-              _Attempt:16/integer, MsgID:16/binary, Msg/binary>> ->
-                case C:message(Msg, {S, MsgID}, CState) of
+              Attempt:16/integer, MsgID:16/binary, Msg/binary>> ->
+                case C:message(Msg, {S, MsgID, Attempt}, CState) of
                     {ok, CState1} ->
                         {ensq_proto:encode({finish, MsgID}), CState1};
                     {requeue, CState1, Timeout} ->
